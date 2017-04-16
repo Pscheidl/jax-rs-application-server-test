@@ -1,0 +1,7 @@
+entity/CurrencyExchange.class
+client/FixerCurrencyExchangeRateService.class
+client/CurrencyExchangeRateService.class
+server/ApiConfiguration.class
+client/FixerWebTargetProducer.class
+entity/Rates.class
+server/MoneyEndpoint.class
