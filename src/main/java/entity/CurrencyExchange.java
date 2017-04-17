@@ -1,5 +1,7 @@
 package entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class CurrencyExchange {
 
     private String base;

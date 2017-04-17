@@ -1,322 +1,286 @@
 package entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.Map;
-@JsonIgnoreProperties(ignoreUnknown = true)
+
 public class Rates {
 
-    @JsonProperty("AUD")
-    private Double aUD;
-    @JsonProperty("BGN")
-    private Double bGN;
-    @JsonProperty("BRL")
-    private Double bRL;
-    @JsonProperty("CAD")
-    private Double cAD;
-    @JsonProperty("CHF")
-    private Double cHF;
-    @JsonProperty("CNY")
-    private Double cNY;
-    @JsonProperty("CZK")
-    private Double cZK;
-    @JsonProperty("DKK")
-    private Double dKK;
-    @JsonProperty("GBP")
-    private Double gBP;
-    @JsonProperty("HKD")
-    private Double hKD;
-    @JsonProperty("HRK")
-    private Double hRK;
-    @JsonProperty("HUF")
-    private Double hUF;
-    @JsonProperty("IDR")
-    private Double iDR;
-    @JsonProperty("ILS")
-    private Double iLS;
-    @JsonProperty("INR")
-    private Double iNR;
-    @JsonProperty("JPY")
-    private Double jPY;
-    @JsonProperty("KRW")
-    private Double kRW;
-    @JsonProperty("MXN")
-    private Double mXN;
-    @JsonProperty("MYR")
-    private Double mYR;
-    @JsonProperty("NOK")
-    private Double nOK;
-    @JsonProperty("NZD")
-    private Double nZD;
-    @JsonProperty("PHP")
-    private Double pHP;
-    @JsonProperty("PLN")
-    private Double pLN;
-    @JsonProperty("RON")
-    private Double rON;
-    @JsonProperty("RUB")
-    private Double rUB;
-    @JsonProperty("SEK")
-    private Double sEK;
-    @JsonProperty("SGD")
-    private Double sGD;
-    @JsonProperty("THB")
-    private Double tHB;
-    @JsonProperty("TRY")
-    private Double tRY;
-    @JsonProperty("USD")
-    private Double uSD;
-    @JsonProperty("ZAR")
-    private Double zAR;
+    private BigDecimal AUD;
+    private BigDecimal BGN;
+    private BigDecimal BRL;
+    private BigDecimal CAD;
+    private BigDecimal CHF;
+    private BigDecimal CNY;
+    private BigDecimal CZK;
+    private BigDecimal DKK;
+    private BigDecimal GBP;
+    private BigDecimal HKD;
+    private BigDecimal HRK;
+    private BigDecimal HUF;
+    private BigDecimal IDR;
+    private BigDecimal ILS;
+    private BigDecimal INR;
+    private BigDecimal JPY;
+    private BigDecimal KRW;
+    private BigDecimal MXN;
+    private BigDecimal MYR;
+    private BigDecimal NOK;
+    private BigDecimal NZD;
+    private BigDecimal PHP;
+    private BigDecimal PLN;
+    private BigDecimal RON;
+    private BigDecimal RUB;
+    private BigDecimal SEK;
+    private BigDecimal SGD;
+    private BigDecimal THB;
+    private BigDecimal TRY;
+    private BigDecimal USD;
+    private BigDecimal ZAR;
 
-    public Double getaUD() {
-        return aUD;
+    public BigDecimal getAUD() {
+        return AUD;
     }
 
-    public void setaUD(Double aUD) {
-        this.aUD = aUD;
+    public void setAUD(BigDecimal AUD) {
+        this.AUD = AUD;
     }
 
-    public Double getbGN() {
-        return bGN;
+    public BigDecimal getBGN() {
+        return BGN;
     }
 
-    public void setbGN(Double bGN) {
-        this.bGN = bGN;
+    public void setBGN(BigDecimal BGN) {
+        this.BGN = BGN;
     }
 
-    public Double getbRL() {
-        return bRL;
+    public BigDecimal getBRL() {
+        return BRL;
     }
 
-    public void setbRL(Double bRL) {
-        this.bRL = bRL;
+    public void setBRL(BigDecimal BRL) {
+        this.BRL = BRL;
     }
 
-    public Double getcAD() {
-        return cAD;
+    public BigDecimal getCAD() {
+        return CAD;
     }
 
-    public void setcAD(Double cAD) {
-        this.cAD = cAD;
+    public void setCAD(BigDecimal CAD) {
+        this.CAD = CAD;
     }
 
-    public Double getcHF() {
-        return cHF;
+    public BigDecimal getCHF() {
+        return CHF;
     }
 
-    public void setcHF(Double cHF) {
-        this.cHF = cHF;
+    public void setCHF(BigDecimal CHF) {
+        this.CHF = CHF;
     }
 
-    public Double getcNY() {
-        return cNY;
+    public BigDecimal getCNY() {
+        return CNY;
     }
 
-    public void setcNY(Double cNY) {
-        this.cNY = cNY;
+    public void setCNY(BigDecimal CNY) {
+        this.CNY = CNY;
     }
 
-    public Double getcZK() {
-        return cZK;
+    public BigDecimal getCZK() {
+        return CZK;
     }
 
-    public void setcZK(Double cZK) {
-        this.cZK = cZK;
+    public void setCZK(BigDecimal CZK) {
+        this.CZK = CZK;
     }
 
-    public Double getdKK() {
-        return dKK;
+    public BigDecimal getDKK() {
+        return DKK;
     }
 
-    public void setdKK(Double dKK) {
-        this.dKK = dKK;
+    public void setDKK(BigDecimal DKK) {
+        this.DKK = DKK;
     }
 
-    public Double getgBP() {
-        return gBP;
+    public BigDecimal getGBP() {
+        return GBP;
     }
 
-    public void setgBP(Double gBP) {
-        this.gBP = gBP;
+    public void setGBP(BigDecimal GBP) {
+        this.GBP = GBP;
     }
 
-    public Double gethKD() {
-        return hKD;
+    public BigDecimal getHKD() {
+        return HKD;
     }
 
-    public void sethKD(Double hKD) {
-        this.hKD = hKD;
+    public void setHKD(BigDecimal HKD) {
+        this.HKD = HKD;
     }
 
-    public Double gethRK() {
-        return hRK;
+    public BigDecimal getHRK() {
+        return HRK;
     }
 
-    public void sethRK(Double hRK) {
-        this.hRK = hRK;
+    public void setHRK(BigDecimal HRK) {
+        this.HRK = HRK;
     }
 
-    public Double gethUF() {
-        return hUF;
+    public BigDecimal getHUF() {
+        return HUF;
     }
 
-    public void sethUF(Double hUF) {
-        this.hUF = hUF;
+    public void setHUF(BigDecimal HUF) {
+        this.HUF = HUF;
     }
 
-    public Double getiDR() {
-        return iDR;
+    public BigDecimal getIDR() {
+        return IDR;
     }
 
-    public void setiDR(Double iDR) {
-        this.iDR = iDR;
+    public void setIDR(BigDecimal IDR) {
+        this.IDR = IDR;
     }
 
-    public Double getiLS() {
-        return iLS;
+    public BigDecimal getILS() {
+        return ILS;
     }
 
-    public void setiLS(Double iLS) {
-        this.iLS = iLS;
+    public void setILS(BigDecimal ILS) {
+        this.ILS = ILS;
     }
 
-    public Double getiNR() {
-        return iNR;
+    public BigDecimal getINR() {
+        return INR;
     }
 
-    public void setiNR(Double iNR) {
-        this.iNR = iNR;
+    public void setINR(BigDecimal INR) {
+        this.INR = INR;
     }
 
-    public Double getjPY() {
-        return jPY;
+    public BigDecimal getJPY() {
+        return JPY;
     }
 
-    public void setjPY(Double jPY) {
-        this.jPY = jPY;
+    public void setJPY(BigDecimal JPY) {
+        this.JPY = JPY;
     }
 
-    public Double getkRW() {
-        return kRW;
+    public BigDecimal getKRW() {
+        return KRW;
     }
 
-    public void setkRW(Double kRW) {
-        this.kRW = kRW;
+    public void setKRW(BigDecimal KRW) {
+        this.KRW = KRW;
     }
 
-    public Double getmXN() {
-        return mXN;
+    public BigDecimal getMXN() {
+        return MXN;
     }
 
-    public void setmXN(Double mXN) {
-        this.mXN = mXN;
+    public void setMXN(BigDecimal MXN) {
+        this.MXN = MXN;
     }
 
-    public Double getmYR() {
-        return mYR;
+    public BigDecimal getMYR() {
+        return MYR;
     }
 
-    public void setmYR(Double mYR) {
-        this.mYR = mYR;
+    public void setMYR(BigDecimal MYR) {
+        this.MYR = MYR;
     }
 
-    public Double getnOK() {
-        return nOK;
+    public BigDecimal getNOK() {
+        return NOK;
     }
 
-    public void setnOK(Double nOK) {
-        this.nOK = nOK;
+    public void setNOK(BigDecimal NOK) {
+        this.NOK = NOK;
     }
 
-    public Double getnZD() {
-        return nZD;
+    public BigDecimal getNZD() {
+        return NZD;
     }
 
-    public void setnZD(Double nZD) {
-        this.nZD = nZD;
+    public void setNZD(BigDecimal NZD) {
+        this.NZD = NZD;
     }
 
-    public Double getpHP() {
-        return pHP;
+    public BigDecimal getPHP() {
+        return PHP;
     }
 
-    public void setpHP(Double pHP) {
-        this.pHP = pHP;
+    public void setPHP(BigDecimal PHP) {
+        this.PHP = PHP;
     }
 
-    public Double getpLN() {
-        return pLN;
+    public BigDecimal getPLN() {
+        return PLN;
     }
 
-    public void setpLN(Double pLN) {
-        this.pLN = pLN;
+    public void setPLN(BigDecimal PLN) {
+        this.PLN = PLN;
     }
 
-    public Double getrON() {
-        return rON;
+    public BigDecimal getRON() {
+        return RON;
     }
 
-    public void setrON(Double rON) {
-        this.rON = rON;
+    public void setRON(BigDecimal RON) {
+        this.RON = RON;
     }
 
-    public Double getrUB() {
-        return rUB;
+    public BigDecimal getRUB() {
+        return RUB;
     }
 
-    public void setrUB(Double rUB) {
-        this.rUB = rUB;
+    public void setRUB(BigDecimal RUB) {
+        this.RUB = RUB;
     }
 
-    public Double getsEK() {
-        return sEK;
+    public BigDecimal getSEK() {
+        return SEK;
     }
 
-    public void setsEK(Double sEK) {
-        this.sEK = sEK;
+    public void setSEK(BigDecimal SEK) {
+        this.SEK = SEK;
     }
 
-    public Double getsGD() {
-        return sGD;
+    public BigDecimal getSGD() {
+        return SGD;
     }
 
-    public void setsGD(Double sGD) {
-        this.sGD = sGD;
+    public void setSGD(BigDecimal SGD) {
+        this.SGD = SGD;
     }
 
-    public Double gettHB() {
-        return tHB;
+    public BigDecimal getTHB() {
+        return THB;
     }
 
-    public void settHB(Double tHB) {
-        this.tHB = tHB;
+    public void setTHB(BigDecimal THB) {
+        this.THB = THB;
     }
 
-    public Double gettRY() {
-        return tRY;
+    public BigDecimal getTRY() {
+        return TRY;
     }
 
-    public void settRY(Double tRY) {
-        this.tRY = tRY;
+    public void setTRY(BigDecimal TRY) {
+        this.TRY = TRY;
     }
 
-    public Double getuSD() {
-        return uSD;
+    public BigDecimal getUSD() {
+        return USD;
     }
 
-    public void setuSD(Double uSD) {
-        this.uSD = uSD;
+    public void setUSD(BigDecimal USD) {
+        this.USD = USD;
     }
 
-    public Double getzAR() {
-        return zAR;
+    public BigDecimal getZAR() {
+        return ZAR;
     }
 
-    public void setzAR(Double zAR) {
-        this.zAR = zAR;
+    public void setZAR(BigDecimal ZAR) {
+        this.ZAR = ZAR;
     }
 }
