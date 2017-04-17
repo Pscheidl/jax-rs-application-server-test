@@ -6,8 +6,6 @@ Invoke the REST endpoint `/money` via HTTP GET. On localhost with unmodified con
 
 GET `http://localhost:8080/jaxrs-client-1.0/money
 
-To demonstrate, the API must be invoked "concurrently enough" to simulate at least two clients connecting at the same time. For example: `ab -n 1000 -c 100 http://localhost:8080/jaxrs-client-1.0/money`.
-
 ###Example response
 
 ```json
@@ -50,7 +48,7 @@ To demonstrate, the API must be invoked "concurrently enough" to simulate at lea
 }
 ```
 
-## Problem
+## Problem with pools
 
 Different JAX-RS implementations use different pooling strategy. This results in different reusability of WebTarget/Client.
 
