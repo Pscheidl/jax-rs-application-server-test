@@ -55,7 +55,7 @@ Different JAX-RS implementations use different pooling strategy. This results in
 - Deployment to an application server with Jersey as a JAX-RS implementation will work flawlessly, because Jersey uses HTTP connection pool internally by default. Example of such application server is Payara.
 - Deployment to an application server with Resteasy as a JAX-RS implementation will cause an exception.
 
-###Resteasy exception
+### Resteasy exception
 ```text
 java.lang.IllegalStateException: Invalid use of BasicClientConnManager: connection still allocated.
 Make sure to release the connection before allocating another one.
