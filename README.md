@@ -1,4 +1,4 @@
-# JAX-RS Connection pool test
+# JAX-RS deserialization client test
 
 ## Invoking
 
